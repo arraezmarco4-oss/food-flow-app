@@ -1,0 +1,7 @@
+text
+# Configuración de seguridad
+js/supabaseClient.js
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

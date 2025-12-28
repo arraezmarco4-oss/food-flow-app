@@ -1,0 +1,8 @@
+// Este es un archivo de ejemplo. 
+// Para que la app funcione localmente, crea un archivo llamado 'supabaseClient.js'
+// y copia este contenido poniendo tus credenciales reales.
+
+const supabaseUrl = 'https://PROYECTO.supabase.co';
+const supabaseKey = 'ANON_KEY';
+
+const _supabase = supabase.createClient(supabaseUrl, supabaseKey);

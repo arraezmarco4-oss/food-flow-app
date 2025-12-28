@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante App</title>
+    <!-- Asumiendo que  CSS está en la carpeta css -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- LIBRERÍA DE SUPABASE CORREGIDA -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <h1>Nuestro Menú</h1>
+    
+    <div id="contenedor-menu">
+        <!-- Aquí aparecerán los 3 productos -->
+    </div>
+<!-- Botón flotante para ver el carrito -->
+<div id="ver-carrito" onclick="toggleModal()">
+    🛒 <span id="contador-carrito">0</span>
+</div>
+
+<!-- Estructura del Modal -->
+<div id="modal-carrito" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="toggleModal()">&times;</span>
+        <h2>Tu Pedido</h2>
+        <div id="lista-carrito">
+            <!-- Aquí JS meterá los productos agregados -->
+        </div>
+        <div id="total-carrito">
+            <strong>Total: $0.00</strong>
+        </div>
+        <button id="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+</div>
+
+    <!-- Scripts de la aplicación -->
+    <!-- la conexión y las llaves -->
+    <script src="js/supabaseClient.js"></script>
+
+    <!-- la lógica para pedir y mostrar el menú -->
+    <script src="js/menu.js"></script>
+
+    <!--  la lógica de carrito (si ya creaste el archivo) -->
+    <script src="js/carrito.js"></script>
+</body>
+</html>
