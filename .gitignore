@@ -1,6 +1,7 @@
-text
 # Configuración de seguridad
 js/supabaseClient.js
+js/config.js
+.env
 
 # Archivos del sistema
 .DS_Store
